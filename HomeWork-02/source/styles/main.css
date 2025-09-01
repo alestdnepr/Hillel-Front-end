@@ -1,0 +1,19 @@
+.body {
+    color-scheme: only light;
+}
+
+.bio_actor {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list_ranks li {
+    font-size: 25px;
+}
+
+.monument_Mosc,
+.monument_Nov {
+    display: flex;
+    margin: auto;
+    height: 400px;
+}
