@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jua&display=swap');
+
+html {
+    color-scheme: only light;
+    font-family: 'Inter';
+}
+
+.main-frame {
+    display: flex;
+    width: 1800px;
+    height: 892px;
+    background-color: #FFFCB0;
+    justify-content: center;
+}
+
+.title-about {
+    margin-top: 30px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.section-minions {
+    width: 1200px;
+    height: 892px;
+    background-color: #B0C6FF;
+}
+
+.minions-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 46px;
+    margin-left: 62px;
+    margin-right: 62px;
+}
+
+
+
+
+
+.card-01 {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 327px;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 3px solid #000000;
+}
+
+.image-minion-01 {
+    width: 148.31px;
+    height: 141px;
+    margin-top: 23px;
+    object-fit: cover;
+}
+
+.card-title-01 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.card-text-01 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 11px;
+}
+
+.button-read-01 {
+    width: 170.71px;
+    height: 40px;
+    margin-top: 22px;
+    background-color: #6177EB;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+
+
+
+
+.card-02 {
+    display: flex;
+    flex-direction: column;
+    width: 239px;
+    height: 327px;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 3px solid #000000;
+}
+
+.image-minion-02 {
+    width: 139px;
+    height: 141px;
+    margin-top: 22px;
+    object-fit: cover;
+}
+
+.card-title-02 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.card-text-02 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 9px;
+}
+
+.button-read-02 {
+    width: 160px;
+    height: 40px;
+    margin-top: 22px;
+    background-color: #6177EB;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+
+
+
+
+.card-03-04 {
+    display: flex;
+    flex-direction: column;
+    width: 239px;
+    height: 327px;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 3px solid #000000;
+}
+
+.image-minion-03-04 {
+    width: 139px;
+    height: 141px;
+    margin-top: 23px;
+    object-fit: cover;
+}
+
+.card-title-03-04 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.card-text-03-04 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 11px;
+}
+
+.button-read-03-04 {
+    width: 160px;
+    height: 40px;
+    margin-top: 22px;
+    background-color: #6177EB;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+
+
+
+
+.card-05-08 {
+    display: flex;
+    flex-direction: column;
+    width: 239px;
+    height: 327px;
+    margin-top: 86px;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 3px solid #000000;
+}
+
+.image-minion-05-08 {
+    width: 139px;
+    height: 141px;
+    margin-top: 22px;
+    object-fit: cover;
+}
+
+.card-title-05-08 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.card-text-05-08 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 11px;
+}
+
+.button-read-05-08 {
+    width: 160px;
+    height: 40px;
+    margin-top: 22px;
+    background-color: #6177EB;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
