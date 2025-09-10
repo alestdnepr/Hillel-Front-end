@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html {
+    color-scheme: only light;
+    font-family: 'Inter';
+}
+
+.block-header {
+    display: inline-block;
+    width: 1440px;
+    height: 597px;
+    background-color: #ffffff;
+}
+
+.block-header-navigation {
+    display: inline-block;
+    vertical-align: top;
+    width: 1200px;
+    height: 53px;
+    margin-top: 30px;
+    margin-left: 120px;
+    border-bottom: 0.3px solid #46A35880;
+}
+
+.block-logo {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1px;
+}
+
+.block-navigation {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 8px;
+    margin-left: 229px;
+}
+
+.navigation-point {
+    display: inline-block;
+    margin-right: 50px;
+    padding-bottom: 27px;
+}
+
+.navigation-point a {
+    font-size: 16px;
+    color: #3D3D3D;
+    text-decoration: none;
+}
+
+.point-active {
+    font-weight: 700;
+    border-bottom: 3px solid #46A358;
+}
+
+.navigation-point:hover {
+    background-color: #d4d4d4;
+    border-bottom: 3px solid #000000;
+}
+
+.navigation-point a:hover {
+    color: #FFFFFF;
+}
+
+.button-login {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    margin-left: 305px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 16px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.button-login:hover {
+    background-color: #FFFFFF;
+    color: #46A358;
+    cursor: pointer;
+}
+
+.login-icon {
+    width: 20px;
+    height: 20px;
+    color: #FFFFFF;
+}
+
+
+
+
+.block-header-section {
+    display: inline-block;
+    vertical-align: top;
+    width: 1200px;
+    height: 450px;
+    margin-top: 12px;
+    margin-left: 120px;
+    background-color: #F5F5F580;
+}
+
+.block-header-section-content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.section-info {
+    display: block;
+    margin-top: 68px;
+    margin-left: 43px;
+    font-size: 16px;
+    color: #3D3D3D;
+}
+
+.section-title {
+    display: block;
+    max-width: 569px;
+    margin-top: 7px;
+    margin-left: 40px;
+    font-size: 70px;
+    font-weight: 900;
+    color: #3D3D3D;
+}
+
+.color-planet {
+    color: #46A358;
+}
+
+.section-text {
+    display: block;
+    max-width: 578px;
+    margin-top: 5px;
+    margin-left: 43px;
+    color: #727272;
+}
+
+.button-shopnow {
+    display: block;
+    margin-top: 44px;
+    margin-left: 41px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 11px 27px 9px 26px;
+}
+
+.button-shopnow:hover {
+    background-color: #FFFFFF;
+    color: #46A358;
+    cursor: pointer;
+}
+
+.block-header-section-image {
+    display: inline-block;
+    margin-left: 67px;
+}
+
+.image-plant {
+    display: inline-block;
+    width: 507px;
+    height: 450px;
+}
