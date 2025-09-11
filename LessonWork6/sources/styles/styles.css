@@ -1,3 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html {
     color-scheme: only light;
+    font-family: 'Poppins';
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 800px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.header-line {
+    display: flex;
+    width: 1120px;
+    height: 43px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.navigation-block-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.navigation-block-list-item a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #484848;
+}
+
+.header-line-buttons {
+    display: flex;
+    gap: 24px;
+}
+
+.button-signin {
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #484848;
+}
+
+.button-signin:hover {
+    cursor: pointer;
+}
+
+.button-signup {
+    width: 125px;
+    height: 43px;
+    background-color: #1572D3;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.button-signup:hover {
+    cursor: pointer;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+}
+
+.header-main-section-titlephoto {
+    display: flex;
+    gap: 99px;
+
+}
+
+.header-main-title {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    margin-top: 157px;
+}
+
+.title-name {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.word-style {
+    color: #1572D3;
+}
+
+.title-text {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #272727;
+}
+
+.buttons-intitle {
+    display: flex;
+    margin-top: 40px;
+    gap: 11.51px;
+}
+
+.button-googleplay,
+.button-appstore {
+    display: flex;
+    justify-content: center;
+    width: 123.75px;
+    height: 36.62px;
+    border: none;
+    border-radius: 7.17px;
+}
+
+.button-googleplay img,
+.button-appstore img {
+    width: 123.75px;
+    height: 36.62px;
+}
+
+.button-googleplay:hover,
+.button-appstore:hover {
+    cursor: pointer;
+}
+
+.header-main-photo {
+    display: flex;
+}
+
+.photo-car {
+    width: 648px;
+    /**1048px**/
+    height: 537px;
+    object-fit: cover;
+}
+
+.header-main-section-search {
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    height: 72px;
+    margin-top: 60px;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px #135EAC1F;
+}
+
+.block-search {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.block-search-location,
+.block-search-pickupdate,
+.block-search-returndate {
+    display: flex;
+    width: 255.67px;
+    height: 37px;
+    gap: 16px;
+}
+
+.block-search-pickupdate,
+.block-search-returndate {
+    border-left: 1px solid #ACACAC;
+}
+
+.image-location img,
+.image-date img {
+    width: 32px;
+    height: 32px;
+    padding-left: 28px;
+}
+
+.text-search {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3E3E3E;
+}
+
+.text-info {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #B6B6B6;
+}
+
+.button-search {
+    width: 159px;
+    height: 48px;
+    margin-right: 12px;
+    border: none;
+    border-radius: 16px;
+    background-color: #1572D3;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.button-search:hover {
+    cursor: pointer;
 }
