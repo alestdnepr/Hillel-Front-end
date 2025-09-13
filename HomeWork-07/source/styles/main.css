@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@font-face {
+    font-family: "Hanged Letters";
+    src: url("./source/fonts/HangedLetters.ttf") format("truetype");
+}
+
 html {
     color-scheme: only light;
     font-family: 'Inter';
@@ -241,12 +246,13 @@ html {
     align-items: center;
     width: 310px;
     height: 470px;
-    background-color: #ebfcee;
+    background: linear-gradient(180deg, #46A3581A 10%, #46A35808 3%);
 }
 
 .supersale-block-title {
     margin-top: 18px;
-    font-size: 60px;
+    font-family: "Hanged Letters";
+    font-size: 65px;
     font-weight: 400;
     color: #46A358;
 }
@@ -327,6 +333,10 @@ html {
     font-size: 15px;
     font-weight: 400;
     color: #3D3D3D;
+}
+
+.pointer:hover {
+    cursor: pointer;
 }
 
 .cards-plants-main {
