@@ -57,6 +57,10 @@ html {
 .navigation-point:hover {
     background-color: #d4d4d4;
     border-bottom: 3px solid #000000;
+    cursor: pointer;
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
 }
 
 .navigation-point a:hover {
@@ -84,8 +88,8 @@ html {
 }
 
 .button-login:hover {
-    background-color: #FFFFFF;
-    color: #46A358;
+    background-color: #3D3D3D;
+    color: #FBFBFB;
     cursor: pointer;
 }
 
@@ -152,8 +156,8 @@ html {
 }
 
 .button-shopnow:hover {
-    background-color: #FFFFFF;
-    color: #46A358;
+    background-color: #3D3D3D;
+    color: #FBFBFB;
     cursor: pointer;
 }
 
@@ -342,6 +346,7 @@ html {
 .cards-plants-main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 840px;
     height: 1190px;
     margin-top: 31px;
