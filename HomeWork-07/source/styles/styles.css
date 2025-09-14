@@ -23,10 +23,12 @@ html {
 .close-button {
     background-color: rgba(255, 255, 255, 0);
     border: none;
-    font-size: 18px;
+    font-size: 13px;
+    font-weight: 900;
     color: #46A358;
     margin-top: 13px;
     margin-right: 13px;
+    padding: 0;
 }
 
 .close-button:hover {
@@ -37,23 +39,39 @@ html {
     display: flex;
     justify-content: space-between;
     width: 157px;
+    height: 16px;
     margin-top: 21px;
+    align-items: center;
 }
 
 .but_login {
+    display: flex;
+    width: 52px;
+    height: 16px;
     background-color: rgba(255, 255, 255, 0);
     border: none;
     font-size: 20px;
     font-weight: 500;
     color: #3D3D3D;
+    padding: 0;
+}
+
+.log_reg span {
+    font-size: 18px;
+    font-weight: 250;
+    color: #3D3D3D;
 }
 
 .but_register {
+    display: flex;
+    width: 78px;
+    height: 16px;
     background-color: rgba(255, 255, 255, 0);
     border: none;
     font-size: 20px;
     font-weight: 500;
     color: #46A358;
+    padding: 0;
 }
 
 .but_login:hover,
@@ -63,6 +81,7 @@ html {
 
 .text_enter {
     width: 300px;
+    height: 16px;
     margin-top: 40px;
     font-size: 13px;
     font-weight: 400;
@@ -80,7 +99,8 @@ html {
     width: 300px;
     height: 40px;
     border-radius: 5px;
-    border-color: #EAEAEA;
+    border: 1px solid #EAEAEA;
+    padding: 0;
 }
 
 ::placeholder {
@@ -99,6 +119,7 @@ html {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 700;
+    padding: 0;
 }
 
 .register:hover {
@@ -107,9 +128,28 @@ html {
     cursor: pointer;
 }
 
+.text_regwith_block {
+    display: flex;
+    position: relative;
+}
+
 .text_regwith {
+    text-align: center;
+    width: 300px;
+    height: 16px;
     margin-top: 36px;
     color: #3D3D3D;
+    z-index: 2;
+}
+
+.text_regwith_line {
+    display: flex;
+    position: absolute;
+    background-position: 50% 50%;
+    width: 300px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #EAEAEA;
+    z-index: 1;
 }
 
 .continue {
@@ -126,13 +166,21 @@ html {
     width: 300px;
     height: 40px;
     align-items: center;
-    gap: 4px;
     background-color: #FFFFFF;
     color: #727272;
+    border: 1px solid #EAEAEA;
     border-radius: 5px;
-    border-color: #EAEAEA;
     font-size: 13px;
     font-weight: 500;
+    padding: 0;
+}
+
+.but_cwgoogle {
+    gap: 9px;
+}
+
+.but_cwgfacebook {
+    gap: 4px;
 }
 
 .but_cwgoogle:hover,
@@ -150,6 +198,6 @@ html {
 .greenform {
     width: 500px;
     height: 10px;
-    margin-top: 4px;
+    margin-top: 35px;
     background-color: #46A358;
 }

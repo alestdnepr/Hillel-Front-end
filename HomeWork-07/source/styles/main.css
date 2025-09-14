@@ -354,6 +354,10 @@ html {
     row-gap: 70px;
 }
 
+.cards-plants-main a {
+    text-decoration: none;
+}
+
 .card-plant {
     display: flex;
     flex-direction: column;
