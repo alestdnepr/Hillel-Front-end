@@ -20,13 +20,16 @@ html {
 .section-header {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
 }
 
 .block-header-navigation {
     display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    max-width: 100%;
     max-height: 53px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    justify-content: space-between;
     border-bottom: 0.3px solid #46A35880;
     background-color: rgb(255, 255, 255);
 }
@@ -39,12 +42,24 @@ html {
     margin-top: 1px;
 }
 
+.block-navigation {
+    display: flex;
+    flex-grow: 1;
+    max-width: 351px;
+    margin-top: 8px;
+    justify-content: space-between;
+}
+
 .navigation-menu {
     display: flex;
-    margin-top: 8px;
-    max-width: 351px;
-    height: 45px;
-    gap: 50px;
+    flex-grow: 1;
+    padding-bottom: 25px;
+    justify-content: space-between;
+}
+
+.navigation-point {
+    display: flex;
+    padding-bottom: 42px;
 }
 
 .navigation-point a {
@@ -57,16 +72,15 @@ html {
     background-color: #d4d4d4;
     border-bottom: 3px solid #000000;
     cursor: pointer;
-    padding-top: 1px;
-    padding-left: 1px;
-    padding-right: 1px;
-}
-
-.navigation-point a:hover {
-    color: #FFFFFF;
+    padding-top: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .point-active {
+    padding-bottom: 43px;
     font-weight: 700;
     border-bottom: 3px solid #46A358;
 }
@@ -74,8 +88,7 @@ html {
 .button-login {
     display: flex;
     align-items: center;
-    width: 100px;
-    height: 35px;
+    padding: 7px 17px;
     background-color: #46A358;
     color: #FFFFFF;
     border: none;
@@ -92,36 +105,32 @@ html {
     cursor: pointer;
 }
 
-.login-icon {
-    width: 20px;
-    height: 20px;
-    color: #FFFFFF;
-}
-
 .block-header-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 1200px;
-    height: 450px;
-    margin-top: 12px;
+    max-width: 100%;
     background-color: #F5F5F580;
 }
 
 .block-header-section-content {
     display: flex;
     flex-direction: column;
+    max-width: 610px;
+    margin-top: 68px;
 }
 
 .section-info {
-    margin-top: 68px;
+    margin-bottom: 7px;
     margin-left: 43px;
     font-size: 16px;
     color: #3D3D3D;
 }
 
 .section-title {
-    margin-top: 7px;
+    margin-bottom: 5px;
     margin-left: 40px;
+    line-height: 70px;
     font-size: 70px;
     font-weight: 900;
     color: #3D3D3D;
@@ -133,16 +142,17 @@ html {
 
 .section-text {
     max-width: 557px;
-    margin-top: 5px;
+    margin-bottom: 44px;
     margin-left: 43px;
+    line-height: 24px;
     color: #727272;
 }
 
+/****/
 .button-shopnow {
     display: flex;
     width: 140px;
     height: 40px;
-    margin-top: 44px;
     margin-left: 41px;
     background-color: #46A358;
     color: #FFFFFF;
@@ -473,6 +483,7 @@ html {
     text-align: end;
     font-size: 18px;
     font-weight: 900;
+    line-height: 24px;
     color: #3D3D3D;
 }
 
@@ -482,6 +493,7 @@ html {
     text-align: end;
     font-size: 14px;
     font-weight: 400;
+    line-height: 24px;
     color: #727272;
 }
 
@@ -568,6 +580,7 @@ html {
     margin-bottom: 4px;
     font-size: 20px;
     font-weight: 700;
+    line-height: 26px;
     color: #3D3D3D;
 }
 
@@ -575,6 +588,7 @@ html {
     margin-bottom: 9px;
     font-size: 14px;
     font-weight: 400;
+    line-height: 22px;
     color: #727272;
 }
 
