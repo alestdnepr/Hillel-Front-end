@@ -11,10 +11,7 @@ html {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1440px;
+    max-width: 1200px;
     background-color: #ffffff;
     margin-right: auto;
     margin-left: auto;
@@ -23,15 +20,13 @@ html {
 .section-header {
     display: flex;
     flex-direction: column;
-    height: 597px;
 }
 
 .block-header-navigation {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    width: 1200px;
-    height: 53px;
+    max-height: 53px;
     border-bottom: 0.3px solid #46A35880;
     background-color: rgb(255, 255, 255);
 }
@@ -47,7 +42,7 @@ html {
 .navigation-menu {
     display: flex;
     margin-top: 8px;
-    width: 351px;
+    max-width: 351px;
     height: 45px;
     gap: 50px;
 }
@@ -176,7 +171,6 @@ html {
 .section-page-categories {
     display: flex;
     justify-content: space-between;
-    height: 1622px;
     padding-top: 26px;
     column-gap: 50px;
     background-color: rgb(255, 255, 255);
@@ -436,5 +430,166 @@ html {
 .button-num:hover {
     background-color: #3D3D3D;
     color: #FBFBFB;
+    cursor: pointer;
+}
+
+.section-page-blogposts {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 68px;
+}
+
+.head-section-page-blogposts {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.card-page-blogposts {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.photo-card-page {
+    max-width: 287px;
+}
+
+.info-card-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 89px;
+    padding-right: 30px;
+    background-color: #FBFBFB;
+
+}
+
+.title-card-page {
+    max-width: 165px;
+    margin-bottom: 9px;
+    text-align: end;
+    font-size: 18px;
+    font-weight: 900;
+    color: #3D3D3D;
+}
+
+.text-card-page {
+    max-width: 292px;
+    margin-bottom: 25px;
+    text-align: end;
+    font-size: 14px;
+    font-weight: 400;
+    color: #727272;
+}
+
+.button-findmore {
+    display: flex;
+    align-items: center;
+    padding: 11px 27px 10px 28px;
+    gap: 4px;
+    border: none;
+    border-radius: 6px;
+    background-color: #46A358;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.button-findmore:hover {
+    background-color: #3D3D3D;
+    color: #FBFBFB;
+    cursor: pointer;
+}
+
+.foot-section-page-blogposts {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 138px;
+    align-items: center;
+}
+
+.title-foot-section {
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #3D3D3D;
+}
+
+.text-foot-section {
+    margin-bottom: 35px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #727272;
+}
+
+.all-cards-foot {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.card-foot-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 268px;
+    align-items: center;
+    background-color: #FBFBFB;
+}
+
+.image-card-foot {
+    max-width: 100%;
+    max-height: 195px;
+    margin-bottom: 9px;
+}
+
+.info-card-foot {
+    display: flex;
+    flex-direction: column;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 12px;
+}
+
+.date-foot-section {
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #46A358;
+}
+
+.titlecard-foot-section {
+    max-width: 189px;
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #3D3D3D;
+}
+
+.textcard-foot-section {
+    margin-bottom: 9px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #727272;
+}
+
+.button-readmore {
+    display: flex;
+    max-width: 100px;
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3D3D3D;
+}
+
+.button-readmore:hover {
+    color: #46A358;
     cursor: pointer;
 }
