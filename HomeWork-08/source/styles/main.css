@@ -116,6 +116,7 @@ html {
 .block-header-section-content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     max-width: 610px;
     margin-top: 68px;
 }
@@ -148,20 +149,15 @@ html {
     color: #727272;
 }
 
-/****/
 .button-shopnow {
-    display: flex;
-    width: 140px;
-    height: 40px;
     margin-left: 41px;
+    padding: 11px 27px 9px 26px;
     background-color: #46A358;
-    color: #FFFFFF;
     border: none;
-    border-radius: 16px;
+    border-radius: 6px;
     font-size: 16px;
     font-weight: 700;
-    padding-top: 11px;
-    padding-left: 26px;
+    color: #FFFFFF;
 }
 
 .button-shopnow:hover {
@@ -171,54 +167,26 @@ html {
 }
 
 .image-plant {
-    width: 507px;
-    height: 450px;
+    max-width: 507px;
+    max-height: 450px;
 }
+
 
 
 
 
 .section-page-categories {
     display: flex;
+    max-width: 100%;
     justify-content: space-between;
     padding-top: 26px;
-    column-gap: 50px;
     background-color: rgb(255, 255, 255);
 }
 
-.categories-supersale {
-    display: flex;
-    flex-direction: column;
-}
-
 .categories-block {
-    display: flex;
-    width: 310px;
-    height: 774px;
-    background-color: #FBFBFB;
-}
-
-.categories-content {
-    display: flex;
-    flex-direction: column;
-    margin-left: 18px;
-    width: 103px;
-    height: 383px;
-    background-color: #FBFBFB;
-}
-
-.categories-content-title {
-    margin-top: 14px;
-}
-
-.categories-content-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-top: 7px;
-    margin-left: 12px;
-    width: 91px;
-    height: 360px;
+    padding-top: 14px;
+    padding-bottom: 377px;
+    padding-left: 18px;
     background-color: #FBFBFB;
 }
 
@@ -229,17 +197,27 @@ html {
     color: #3D3D3D;
 }
 
+.categories-content-title a:hover {
+    padding: 2px;
+    background-color: #3D3D3D;
+    color: #FBFBFB;
+}
+
+.categories-content-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: space-between;
+    margin-top: 7px;
+    margin-left: 12px;
+    line-height: 40px;
+}
+
 .categories-content-list a {
     font-size: 15px;
     font-weight: 400;
     text-decoration: none;
     color: #3D3D3D;
-}
-
-.categories-content-title a:hover {
-    padding: 2px;
-    background-color: #3D3D3D;
-    color: #FBFBFB;
 }
 
 .categories-content-list a:hover {
@@ -255,24 +233,25 @@ html {
 .supersale-block {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
     align-items: center;
-    width: 310px;
-    height: 470px;
     background: linear-gradient(180deg, #46A3581A 10%, #46A35808 3%);
 }
 
 .supersale-block-title {
     margin-top: 18px;
+    margin-bottom: 11px;
     font-family: "Hanged Letters";
     font-size: 65px;
     font-weight: 400;
+    line-height: 65px;
     color: #46A358;
 }
 
 .supersale-block-info {
-    margin-top: 11px;
     font-size: 23px;
     font-weight: 700;
+    line-height: 16px;
     color: #3D3D3D;
 }
 
@@ -282,66 +261,61 @@ html {
 }
 
 .supersale-image img {
-    width: 310px;
-    height: 358px;
+    max-width: 310px;
+    height: 357px;
     object-fit: cover;
 }
-
-
 
 .cards-plants {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
+    max-width: 840px;
 }
 
 .cards-plants-header {
     display: flex;
-    width: 838px;
-    height: 23px;
+    max-width: 100%;
+    margin-bottom: 31px;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
 }
 
 .cards-plants-header-left {
     display: flex;
-}
-
-.list-header-left {
-    display: flex;
     column-gap: 40px;
 }
 
-.list-header-left-active {
+.button-cardplants.button-cp-active {
+    padding-bottom: 7px;
+    border: none;
     border-bottom: 2px solid #46A358;
-}
-
-.list-header-left a {
-    font-size: 15px;
-    font-weight: 400;
-    text-decoration: none;
-    color: #3D3D3D;
-}
-
-.list-header-left-active a {
+    background: none;
     font-size: 15px;
     font-weight: 700;
-    text-decoration: none;
     color: #46A358;
 }
 
-.list-header-left a:hover {
+.button-cardplants {
+    padding-bottom: 7px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    background: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #3D3D3D;
+}
+
+.button-cardplants:hover {
     padding: 2px;
     background-color: #3D3D3D;
     color: #FBFBFB;
+    cursor: pointer;
 }
 
 .cards-plants-header-right {
     display: flex;
     column-gap: 8px;
-    align-items: center;
+    padding-bottom: 7px;
     font-size: 15px;
     font-weight: 400;
     color: #3D3D3D;
@@ -355,10 +329,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 840px;
-    height: 1190px;
-    margin-top: 31px;
-    column-gap: 33px;
+    margin-bottom: 90px;
     row-gap: 70px;
 }
 
@@ -369,30 +340,23 @@ html {
 .card-plant {
     display: flex;
     flex-direction: column;
-    width: 258px;
-    height: 350px;
-    align-items: center;
+    max-width: 258px;
     background-color: #FBFBFB;
 }
 
 .wrapper-card-plant {
     display: flex;
-    width: 250px;
-    height: 250px;
-    margin-top: 31px;
+    margin: 31px 4px 31px 4px;
 }
 
 .card-plant-image {
-    width: 250px;
-    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
     object-fit: contain;
 }
 
 .card-plant-title {
-    display: flex;
-    width: 258px;
-    margin-top: 31px;
-    text-align: left;
+    margin-bottom: 6px;
     font-size: 16px;
     font-weight: 400;
     color: #3D3D3D;
@@ -400,25 +364,16 @@ html {
 }
 
 .card-plant-info {
-    display: flex;
-    width: 258px;
-    margin-top: 6px;
-    text-align: left;
     font-size: 18px;
     font-weight: 700;
     color: #46A358;
 }
 
-.numeration-block-rigrhtpos {
-    margin-left: auto
-}
-
 .numeration-block {
+    margin-left: auto;
     display: flex;
     justify-content: space-between;
-    width: 215px;
-    height: 35px;
-    margin-top: 90px;
+    column-gap: 10px;
 }
 
 .button-num {
@@ -474,7 +429,6 @@ html {
     padding-top: 89px;
     padding-right: 30px;
     background-color: #FBFBFB;
-
 }
 
 .title-card-page {
@@ -521,7 +475,7 @@ html {
     flex-direction: column;
     max-width: 100%;
     margin-top: 138px;
-    align-items: center;
+    text-align: center;
 }
 
 .title-foot-section {
@@ -543,7 +497,6 @@ html {
     flex-wrap: wrap;
     max-width: 100%;
     justify-content: space-between;
-    gap: 40px;
 }
 
 .card-foot-section {
