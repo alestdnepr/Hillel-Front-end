@@ -6,18 +6,14 @@ html {
 .form_registration {
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 656px;
-    align-items: center;
-    background-color: rgba(232, 226, 226, 1);
+    max-width: 500px;
+    background-color: rgb(255, 255, 255);
     margin-right: auto;
     margin-left: auto;
 }
 
 .headclose {
-    display: flex;
-    justify-content: flex-end;
-    width: 500px;
+    text-align: right;
 }
 
 .close-button {
@@ -37,41 +33,38 @@ html {
 
 .log_reg {
     display: flex;
-    justify-content: space-between;
-    width: 157px;
-    height: 16px;
     margin-top: 21px;
+    margin-bottom: 40px;
+    column-gap: 12px;
     align-items: center;
+    justify-content: center;
 }
 
 .but_login {
-    display: flex;
-    width: 52px;
-    height: 16px;
+    padding: 0;
     background-color: rgba(255, 255, 255, 0);
     border: none;
     font-size: 20px;
     font-weight: 500;
+    line-height: 16px;
     color: #3D3D3D;
-    padding: 0;
 }
 
 .log_reg span {
     font-size: 18px;
     font-weight: 250;
+    line-height: 16px;
     color: #3D3D3D;
 }
 
 .but_register {
-    display: flex;
-    width: 78px;
-    height: 16px;
+    padding: 0;
     background-color: rgba(255, 255, 255, 0);
     border: none;
     font-size: 20px;
     font-weight: 500;
+    line-height: 16px;
     color: #46A358;
-    padding: 0;
 }
 
 .but_login:hover,
@@ -80,27 +73,27 @@ html {
 }
 
 .text_enter {
-    width: 300px;
-    height: 16px;
-    margin-top: 40px;
+    margin-bottom: 14px;
+    text-align: center;
     font-size: 13px;
     font-weight: 400;
+    line-height: 16px;
     color: #3D3D3D;
 }
 
 .block_inp {
     display: flex;
     flex-direction: column;
-    margin-top: 14px;
-    gap: 16px;
+    margin-bottom: 41px;
+    align-items: center;
+    row-gap: 16px;
 }
 
 .field_inp {
     width: 300px;
-    height: 40px;
+    padding: 12px 0 12px 0;
     border-radius: 5px;
     border: 1px solid #EAEAEA;
-    padding: 0;
 }
 
 ::placeholder {
@@ -109,17 +102,20 @@ html {
     font-size: 14px;
 }
 
+.wrapper-register {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+
 .register {
-    margin-top: 41px;
-    width: 300px;
-    height: 45px;
+    padding: 16px 118px 13px 119px;
     border: none;
     border-radius: 5px;
     background-color: #46A358;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 700;
-    padding: 0;
 }
 
 .register:hover {
@@ -130,56 +126,43 @@ html {
 
 .text_regwith_block {
     display: flex;
-    position: relative;
+    justify-content: center;
+    margin-bottom: 27px;
 }
 
 .text_regwith {
     text-align: center;
-    width: 300px;
-    height: 16px;
-    margin-top: 36px;
     color: #3D3D3D;
-    z-index: 2;
-}
-
-.text_regwith_line {
-    display: flex;
-    position: absolute;
-    background-position: 50% 50%;
-    width: 300px;
-    padding-bottom: 45px;
-    border-bottom: 1px solid #EAEAEA;
-    z-index: 1;
 }
 
 .continue {
     display: flex;
     flex-direction: column;
-    margin-top: 27px;
-    gap: 15px;
+    margin-bottom: 40px;
+    align-items: center;
+    row-gap: 15px;
 }
 
 .but_cwgoogle,
 .but_cwgfacebook {
     display: flex;
     justify-content: center;
-    width: 300px;
-    height: 40px;
     align-items: center;
     background-color: #FFFFFF;
-    color: #727272;
     border: 1px solid #EAEAEA;
     border-radius: 5px;
     font-size: 13px;
     font-weight: 500;
-    padding: 0;
+    color: #727272;
 }
 
 .but_cwgoogle {
+    padding: 10px 68px 10px 69px;
     gap: 9px;
 }
 
 .but_cwgfacebook {
+    padding: 11px 63px 9px 64px;
     gap: 4px;
 }
 
@@ -196,8 +179,7 @@ html {
 }
 
 .greenform {
-    width: 500px;
+    display: flex;
     height: 10px;
-    margin-top: 35px;
     background-color: #46A358;
 }

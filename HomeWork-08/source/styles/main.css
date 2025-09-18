@@ -519,6 +519,7 @@ html {
     padding-left: 13px;
     padding-right: 13px;
     padding-bottom: 12px;
+    text-align: left;
 }
 
 .date-foot-section {
@@ -545,18 +546,14 @@ html {
     color: #727272;
 }
 
-.button-readmore {
-    display: flex;
-    max-width: 100px;
-    padding: 0;
-    background: none;
-    border: none;
+.link-readmore {
+    text-decoration: none;
     font-size: 14px;
     font-weight: 500;
     color: #3D3D3D;
 }
 
-.button-readmore:hover {
+.link-readmore:hover {
     color: #46A358;
     cursor: pointer;
 }
