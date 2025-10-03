@@ -841,6 +841,8 @@ html {
 .email-input {
     padding: 12px 86px 12px 11px;
     border: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 
 ::placeholder {
@@ -955,7 +957,8 @@ html {
 }
 
 .text-chapter-footer:hover {
-    text-shadow: 1px 0 0 #3D3D3D;
+    color: #46A358;
+    text-shadow: 1px 0 0 #46A358;
 }
 
 .title-right-footsec {
@@ -997,6 +1000,7 @@ html {
 }
 
 .copyright {
+    margin-bottom: 22px;
     text-align: center;
     font-size: 14px;
     font-weight: 400;
