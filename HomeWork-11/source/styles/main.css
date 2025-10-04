@@ -67,13 +67,6 @@ html {
 
 .navigation-point:hover {
     justify-content: center;
-    background-color: #46A358;
-    border-radius: 10px;
-
-    .navigation-point-link {
-        text-shadow: 1px 0 0 #EDF6EE;
-        color: #EDF6EE;
-    }
 
     .menu-plantcare {
         display: flex;
@@ -92,7 +85,7 @@ html {
     height: 3px;
     left: 0;
     top: 41px;
-    background-color: #46A358;
+    background-color: #EDF6EE;
 }
 
 .point-active {
