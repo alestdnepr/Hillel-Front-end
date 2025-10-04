@@ -984,6 +984,7 @@ html {
 
     .fill-hover {
         fill: #FBFBFB;
+        fill-opacity: 1;
     }
 }
 
