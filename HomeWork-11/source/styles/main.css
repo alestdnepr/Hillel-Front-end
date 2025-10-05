@@ -67,6 +67,7 @@ html {
 
 .navigation-point:hover {
     justify-content: center;
+    background-color: #EDF6EE;
 
     .menu-plantcare {
         display: flex;
@@ -90,6 +91,10 @@ html {
 
 .point-active {
     font-weight: 700;
+}
+
+.point-active:hover {
+    background-color: rgb(255, 255, 255);
 }
 
 .point-link-active {
@@ -399,7 +404,7 @@ html {
     border-bottom: 2px solid #46A358;
     background: none;
     font-size: 15px;
-    font-weight: 700;
+    text-shadow: 1px 0 0 #46A358;
     color: #46A358;
 }
 
@@ -414,12 +419,18 @@ html {
 }
 
 .button-cardplants:hover {
-    border-radius: 4px;
     border-bottom: 2px solid #3D3D3D;
-    background-color: #1A712A;
-    color: #FBFBFB;
+    background-color: #EDF6EE;
+    color: #3D3D3D;
     text-shadow: 1px 0 0 #FBFBFB;
     cursor: pointer;
+}
+
+.button-cp-active:hover {
+    border-bottom: 2px solid #46A358;
+    background-color: #ffffff;
+    text-shadow: 1px 0 0 #46A358;
+    color: #46A358;
 }
 
 .cards-plants-header-right {

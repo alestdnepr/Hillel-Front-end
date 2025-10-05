@@ -99,9 +99,12 @@ html {
     font-weight: 700;
 }
 
-/*Добавлено*/
-.point-active:hover .navigation-point-link {
+.navigation-point.point-active:hover {
     background: none;
+
+    .navigation-point-link {
+        color: #3D3D3D;
+    }
 }
 
 .point-link-active {
