@@ -175,7 +175,33 @@ html {
     flex-basis: 0;
     flex-grow: 47;
     justify-content: end;
-    margin-bottom: 18px;
+    align-items: center;
+    margin-bottom: 17px;
+    column-gap: 30px;
+}
+
+.button-glassheader,
+.button-basketheader {
+    display: flex;
+    background: none;
+    border: none;
+}
+
+.button-glassheader {
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+
+.button-basketheader {
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+}
+
+.button-glassheader:hover,
+.button-basketheader:hover {
+    cursor: pointer;
+    background-color: #EDF6EE;
+    border-radius: 6px;
 }
 
 .button-login {
@@ -192,6 +218,10 @@ html {
     font-weight: 500;
 }
 
+.icon-fill-none {
+    fill: none;
+}
+
 .button-login:hover {
     background-color: #1A712A;
     color: #FBFBFB;
@@ -201,8 +231,9 @@ html {
 .block-header-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     max-width: 100%;
+    justify-content: space-between;
+    margin-bottom: 46px;
     background-color: #F5F5F580;
 }
 
@@ -264,15 +295,10 @@ html {
     max-height: 450px;
 }
 
-
-
-
-
 .section-page-categories {
     display: flex;
     max-width: 100%;
     justify-content: space-between;
-    padding-top: 26px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -383,6 +409,7 @@ html {
     display: flex;
     flex-direction: column;
     max-width: 840px;
+    margin-bottom: 94px;
 }
 
 .cards-plants-header {
@@ -489,7 +516,7 @@ html {
         display: flex;
         gap: 26px;
         top: 270px;
-        left: 63px;
+        left: 50px;
     }
 }
 
@@ -502,11 +529,36 @@ html {
     border: none;
     border-radius: 4px;
     background-color: #ffffff;
+    border: 1px solid #b8b7b7;
+    transition: 1s;
+}
+
+.icon-fill-card-basket {
+    fill: #46A358;
+    transition: 1s;
+}
+
+.icon-fill-card-heart {
+    fill: #3D3D3D;
+    transition: 1s;
+}
+
+.icon-fill-card-glass {
+    fill: #3D3D3D;
+    transition: 1s;
 }
 
 .icon-container-icons:hover {
     cursor: pointer;
     background-color: #1A712A;
+    transition: 1s;
+
+    .icon-fill-card-basket,
+    .icon-fill-card-heart,
+    .icon-fill-card-glass {
+        fill: #ffffff;
+        transition: 1s;
+    }
 }
 
 .image-icon {
@@ -608,14 +660,14 @@ html {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    margin-top: 30px;
-    margin-bottom: 68px;
+    margin-bottom: 100px;
 }
 
 .head-section-page-blogposts {
     display: flex;
     justify-content: space-between;
     max-width: 100%;
+    margin-bottom: 138px;
 }
 
 .card-page-blogposts {
@@ -670,6 +722,10 @@ html {
     color: #FFFFFF;
 }
 
+.icon-fill-arrow-findmore {
+    fill: none;
+}
+
 .button-findmore:hover {
     background-color: #1A712A;
     color: #FBFBFB;
@@ -680,7 +736,6 @@ html {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    margin-top: 138px;
     text-align: center;
 }
 
@@ -989,6 +1044,11 @@ html {
     height: 30px;
     border: 1px solid #46A35833;
     border-radius: 4px;
+}
+
+.fill-hover {
+    fill: #46A358;
+    fill-opacity: 0.6;
 }
 
 .wrapper-footer-icon:hover {
