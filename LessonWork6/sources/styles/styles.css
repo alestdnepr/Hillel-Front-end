@@ -5,34 +5,49 @@ html {
     font-family: 'Poppins';
 }
 
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header-section {
     display: flex;
     flex-direction: column;
-    width: 1440px;
-    height: 800px;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    padding: 40px 160px 48px 160px;
+    position: relative;
+}
+
+.wrapper-group-vectors {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.group-vectors {
+    opacity: 0.2;
 }
 
 .header-line {
     display: flex;
-    width: 1120px;
-    height: 43px;
+    max-width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
+    margin-bottom: 157px;
 }
 
 .navigation-block-list {
     display: flex;
-    gap: 40px;
-    align-items: center;
+    column-gap: 40px;
 }
 
-.navigation-block-list-item a {
+.nav-bl-list-rubric {
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
+    line-height: 150%;
     color: #484848;
 }
 
@@ -44,8 +59,10 @@ html {
 .button-signin {
     border: none;
     background: none;
+    font-family: 'Poppins';
     font-size: 16px;
     font-weight: 500;
+    line-height: 150%;
     color: #484848;
 }
 
@@ -54,13 +71,14 @@ html {
 }
 
 .button-signup {
-    width: 125px;
-    height: 43px;
-    background-color: #1572D3;
+    padding: 8px 32px;
     border: none;
     border-radius: 8px;
+    font-family: 'Poppins';
     font-size: 16px;
     font-weight: 500;
+    line-height: 150%;
+    background-color: #1572D3;
     color: #ffffff;
 }
 
@@ -70,119 +88,132 @@ html {
 
 .header-main {
     display: flex;
+    max-width: 100%;
     justify-content: space-between;
-    width: 1120px;
-}
-
-.header-main-section-titlephoto {
-    display: flex;
-    gap: 99px;
-
+    margin-bottom: 202px;
 }
 
 .header-main-title {
     display: flex;
     flex-direction: column;
-    width: 390px;
-    margin-top: 157px;
+    max-width: 390px;
+    row-gap: 40px;
 }
 
 .title-name {
     font-size: 48px;
     font-weight: 600;
+    line-height: 100%;
+    color: #242424;
 }
 
 .word-style {
+    position: relative;
     color: #1572D3;
 }
 
+.wrapper-line-vector {
+    position: absolute;
+    top: 35px;
+    left: 0;
+}
+
 .title-text {
-    margin-top: 40px;
     font-size: 18px;
     font-weight: 400;
+    line-height: 150%;
     color: #272727;
 }
 
 .buttons-intitle {
     display: flex;
-    margin-top: 40px;
     gap: 11.51px;
 }
 
-.button-googleplay,
-.button-appstore {
+.gplay-appstore {
     display: flex;
     justify-content: center;
-    width: 123.75px;
-    height: 36.62px;
-    border: none;
-    border-radius: 7.17px;
-}
-
-.button-googleplay img,
-.button-appstore img {
+    align-items: center;
     width: 123.75px;
     height: 36.62px;
 }
 
-.button-googleplay:hover,
-.button-appstore:hover {
+.image-googleplay,
+.image-appstore {
+    display: block;
+    width: 100%;
+}
+
+.gplay-appstore:hover {
     cursor: pointer;
 }
 
 .header-main-photo {
     display: flex;
+    position: relative;
+    background-color: rgb(255, 234, 0);
 }
 
-.photo-car {
-    width: 648px;
-    /**1048px**/
-    height: 537px;
-    object-fit: cover;
+.wrapper-photo-car {
+    position: absolute;
+    top: -58px;
+    right: -160px;
 }
 
 .header-main-section-search {
     display: flex;
     justify-content: space-between;
-    width: 1120px;
-    height: 72px;
-    margin-top: 60px;
     align-items: center;
-    border-radius: 16px;
+    border-radius: 12px;
+    padding: 12px 12px 12px 32px;
     background-color: #ffffff;
-    box-shadow: 0px 6px #135EAC1F;
+    box-shadow: 0px 6px 6px 6px #135EAC1F;
 }
 
 .block-search {
     display: flex;
-    gap: 50px;
+    flex-basis: 0;
+    flex-grow: 1;
     align-items: center;
+    justify-content: space-between;
 }
 
-.block-search-location,
-.block-search-pickupdate,
-.block-search-returndate {
+.wrapper-search {
     display: flex;
-    width: 255.67px;
-    height: 37px;
-    gap: 16px;
+    align-items: center;
+    column-gap: 16px;
+    flex-basis: 0;
+    flex-grow: 1;
+    position: relative;
 }
 
-.block-search-pickupdate,
-.block-search-returndate {
-    border-left: 1px solid #ACACAC;
+.wrapper-search .vertical-line::before {
+    width: 1px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -24px;
+    background-color: #ACACAC;
 }
 
-.image-location img,
-.image-date img {
+.image-wrapper-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 32px;
     height: 32px;
-    padding-left: 28px;
+}
+
+.image-location,
+.image-date {
+    max-width: 100%;
 }
 
 .text-search {
     display: flex;
     flex-direction: column;
+    row-gap: 12px;
 }
 
 .text-title {
@@ -192,24 +223,431 @@ html {
 }
 
 .text-info {
-    margin-top: 12px;
     font-size: 14px;
     font-weight: 400;
     color: #B6B6B6;
 }
 
 .button-search {
-    width: 159px;
-    height: 48px;
-    margin-right: 12px;
+    padding: 9px 51px;
     border: none;
-    border-radius: 16px;
+    border-radius: 8px;
     background-color: #1572D3;
+    font-family: 'Poppins';
     font-size: 16px;
     font-weight: 500;
+    line-height: 150%;
     color: #ffffff;
 }
 
 .button-search:hover {
     cursor: pointer;
+}
+
+.howitwork-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 86px 0;
+
+}
+
+.button-howitwork {
+    margin-bottom: 32px;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1571d310;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #1572D3;
+}
+
+.button-howitwork:hover {
+    cursor: pointer;
+}
+
+.title-howitwork {
+    margin-bottom: 80px;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 130%;
+    color: #333333;
+}
+
+.wrapper-howitwork {
+    display: flex;
+    column-gap: 96px;
+}
+
+.card-howitwork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 202px;
+    margin-bottom: 160px;
+}
+
+.wrapper-image-howitwork {
+    margin-bottom: 40px;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: #ECF5FF;
+}
+
+.title-card-howitwork {
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #000000;
+}
+
+.text-card-howitwork {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #6D6D6D;
+}
+
+.choose-section {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    padding: 92px 131px 91px 0;
+    position: relative;
+}
+
+.wrapper-image-audi {
+    display: flex;
+}
+
+.image-audi {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.wrapper-vector-choosesec {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.button-whychoose {
+    margin-bottom: 32px;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1571d310;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #1572D3;
+}
+
+.button-whychoose:hover {
+    cursor: pointer;
+}
+
+.title-whychoose {
+    max-width: 576px;
+    margin-bottom: 56px;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 130%;
+    color: #333333;
+}
+
+.wrapper-choose-items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.choose-item {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.wrapper-image-choose-item {
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #ECF5FF;
+}
+
+.choose-item-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+.choose-item-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #000000;
+}
+
+.choose-item-text {
+    max-width: 363px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #6D6D6D;
+}
+
+.cars-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    padding: 84px 160px 83px 160px;
+}
+
+.button-popularcars {
+    margin-bottom: 24px;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 32px;
+    background-color: #1571d310;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #1572D3;
+}
+
+.title-cars {
+    margin-bottom: 64px;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 130%;
+    color: #333333;
+}
+
+.list-cars {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    column-gap: 32px;
+}
+
+.item-car {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 24px 24px 24px;
+    border-radius: 24px;
+    box-shadow: 0px 12px 12px 12px #104b8b16;
+    background-color: #FFFFFF;
+}
+
+.wrapper-image-car {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    /*Фиксированный размер*/
+    height: 155px;
+}
+
+.title-item-car {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #262626;
+}
+
+.car-rating {
+    display: flex;
+    column-gap: 6px;
+    margin-bottom: 16px;
+}
+
+.rating {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #000000;
+}
+
+.reviews {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #808080;
+}
+
+.info-car {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    column-gap: 18px;
+    row-gap: 8px;
+}
+
+.info-car-gap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.item-info-car {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.text-info-car {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #959595;
+}
+
+.price-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    border-top: 1px solid #E0E0E0;
+}
+
+.title-price-block {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #595959;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #292929;
+}
+
+.price-day {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #9C9C9C;
+}
+
+.button-rentnow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    column-gap: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1572D3;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.button-rentnow:hover {
+    cursor: pointer;
+}
+
+.wrapper-icon-arrow {
+    display: flex;
+}
+
+.button-showall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9.5px 34px;
+    column-gap: 8px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%;
+    color: #4E4E4E;
+}
+
+.button-showall {
+    cursor: pointer;
+}
+
+.people-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    padding: 127px 0;
+    position: relative;
+    background-color: #F7FBFF;
+}
+
+.button-test {
+    margin-bottom: 24px;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 32px;
+    background-color: #1571d310;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #1572D3;
+}
+
+.title-people {
+    margin-bottom: 80px;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 130%;
+    color: #333333;
+}
+
+.wrapper-quote-left {
+    position: absolute;
+    top: 90px;
+    left: 137px;
+}
+
+.wrapper-quote-right {
+    position: absolute;
+    top: 0;
+    right: 106px;
+}
+
+.wrapper-card-people {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-people {
+    display: flex;
+    border-radius: 24px;
+    background-color: #ffffff;
+}
+
+.wrapper-image-people {
+    display: flex;
+}
+
+.info-card-people {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #97d315;
 }
