@@ -242,7 +242,7 @@
 }
 
 .register:hover {
-    background-color: #3D3D3D;
+    background-color: #1A712A;
     color: #FBFBFB;
     cursor: pointer;
 }
@@ -306,8 +306,8 @@
 
 .but_cwgoogle:hover,
 .but_cwgfacebook:hover {
-    background-color: #3D3D3D;
-    color: #FBFBFB;
+    background-color: #EDF6EE;
+    color: #000000;
     cursor: pointer;
 }
 

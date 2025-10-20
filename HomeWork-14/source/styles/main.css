@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-@font-face {
-    font-family: "Hanged Letters";
-    src: url("./source/fonts/HangedLetters.ttf") format("truetype");
-}
-
 html {
     color-scheme: only light;
     font-family: 'Inter';
@@ -778,11 +773,9 @@ html {
 }
 
 .button-num {
-    /*
     display: flex;
     align-items: center;
     justify-content: center;
-    */
     width: 35px;
     height: 35px;
     background-color: #ffffff;
@@ -804,8 +797,20 @@ html {
     cursor: pointer;
 }
 
-.button-num:hover .icon-arrow-right:hover {
-    color: #FBFBFB;
+.button-num.active-but:hover {
+    background-color: #46A358;
+    color: #ffffff;
+}
+
+.icon-fill-arrow-right {
+    fill: none;
+    stroke: #3D3D3D;
+}
+
+.button-num:hover {
+    .icon-fill-arrow-right {
+        stroke: #FBFBFB;
+    }
 }
 
 .section-page-blogposts {
