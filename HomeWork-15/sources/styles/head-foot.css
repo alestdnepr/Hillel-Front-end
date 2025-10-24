@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-base-mob: 13px;
+    --font-base-tbl: 13px;
+    --font-base-lpt: 18px;
+}
+
+html {
+    color-scheme: only light;
+    font-family: 'Poppins';
+    background-color: #F9F9F9;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1248px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    display: flex;
+    max-width: 100%;
+    margin: 33px 30px 57px 31px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #808080;
+}
+
+.header__wrapper-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__wrapper-burger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__wrapper-burger_button {
+    border: none;
+    background: none;
+}
+
+.header__wrapper-burger_button:hover {
+    cursor: pointer;
+}
+
+.header__wrapper-burger_menu {
+    display: none;
+}
+
+.default-button {
+    padding: 5px 5px 5px 15px;
+    border: none;
+    text-align: left;
+    background-color: #6C5FBC;
+    font-family: 'Poppins';
+    font-size: var(--font-base-mob);
+    color: #F9F9F9;
+}
+
+.header__navigation {
+    display: none;
+}
+
+.header__buttons {
+    display: none;
+}
+
+.header__wrapper-burger:hover {
+    cursor: pointer;
+    background-color: #6C5FBC;
+
+    .header__wrapper-burger_menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 50;
+        background-color: #6C5FBC;
+    }
+
+    .navigation__list {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        row-gap: 5px;
+    }
+
+    .navigation__list_item {
+        padding: 5px 5px 5px 15px;
+    }
+
+    .list__item_link {
+        font-size: var(--font-base-mob);
+        color: #F9F9F9;
+    }
+
+    .button-login {
+        border-top: 2px solid #282828;
+    }
+}
+
+.navigation__list_item:hover {
+    cursor: pointer;
+    background-color: #282828;
+
+    .list__item_link {
+        text-shadow: 1px 0 0 #F9F9F9;
+    }
+}
+
+.button-login:hover,
+.button-signup:hover {
+    cursor: pointer;
+    background-color: #282828;
+    text-shadow: 1px 0 0 #F9F9F9;
+}
+
+
+@media screen and (min-width: 750px) {
+    .header {
+        align-items: center;
+        padding-bottom: 17px;
+    }
+
+    .header__wrapper-logo {
+        flex-grow: 8;
+    }
+
+    .header__wrapper-burger {
+        display: none;
+    }
+
+    .header__navigation {
+        display: flex;
+        flex-grow: 27;
+    }
+
+    .navigation__list {
+        display: flex;
+        align-items: center;
+        column-gap: 38px;
+    }
+
+    .list__item_link {
+        font-size: var(--font-base-tbl);
+        color: #606060;
+    }
+
+    .navigation__list_item:hover {
+        .list__item_link {
+            color: #F9F9F9;
+        }
+
+        .list__item_link {
+            text-shadow: 1px 0 0 #F9F9F9;
+        }
+    }
+
+    .header__buttons {
+        display: flex;
+        flex-grow: 17;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 6px;
+    }
+
+    .default-button {
+        padding: 12px 19px;
+        border-radius: 12px;
+        background-color: #F9F9F9;
+        font-size: var(--font-base-tbl);
+        font-weight: 700;
+        line-height: 19px;
+    }
+
+    .button-login {
+        color: #606060;
+    }
+
+    .button-login:hover {
+        color: #F9F9F9;
+    }
+
+    .button-signup {
+        background-color: #6C5FBC;
+        color: #F9F9F9;
+    }
+
+    .button-signup:hover {
+        background-color: #524894;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        padding-bottom: 25px;
+    }
+
+    .list__item_link {
+        font-size: var(--font-base-lpt);
+    }
+
+    .button-login,
+    .button-signup {
+        font-size: var(--font-base-lpt);
+    }
+}
