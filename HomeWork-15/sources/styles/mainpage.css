@@ -100,8 +100,22 @@
     color: #6C5FBC;
 }
 
+.button-getstart:hover {
+    cursor: pointer;
+    background-color: #524894;
+    text-shadow: 1px 0 0 #F9F9F9;
+}
+
+.button-gopro:hover {
+    cursor: pointer;
+    background-color: #282828;
+    color: #F9F9F9;
+    text-shadow: 1px 0 0 #F9F9F9;
+}
+
 .section-about__toppart_trustpilot {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 62px;
     column-gap: 16px;
@@ -109,12 +123,18 @@
 
 .toppart__trustpilot_leftpart {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     column-gap: 2px;
 }
 
 .trustpilot__leftpart_wrapper {
     display: flex;
+    align-items: center;
+}
+
+.trustpilot__leftpart_wrapper .social-icon {
+    width: 24px;
+    height: 23px;
 }
 
 .trustpilot__leftpart_title {
@@ -125,7 +145,13 @@
 
 .toppart__trustpilot_rightpart {
     display: flex;
+    align-items: center;
     column-gap: 5px;
+}
+
+.toppart__trustpilot_rightpart .social-icon {
+    width: 13px;
+    height: 13px;
 }
 
 .trustpilot__rightpart_wrapper {
