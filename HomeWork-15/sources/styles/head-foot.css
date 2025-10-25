@@ -129,11 +129,12 @@ a {
 @media screen and (min-width: 750px) {
     .header {
         align-items: center;
-        padding-bottom: 17px;
+        margin: 34px 68px 35px 68px;
+        padding-bottom: 18px;
     }
 
     .header__wrapper-logo {
-        flex-grow: 8;
+        flex-grow: 1;
     }
 
     .header__wrapper-burger {
@@ -142,7 +143,7 @@ a {
 
     .header__navigation {
         display: flex;
-        flex-grow: 27;
+        flex-grow: 1;
     }
 
     .navigation__list {
@@ -168,7 +169,7 @@ a {
 
     .header__buttons {
         display: flex;
-        flex-grow: 17;
+        flex-grow: 1;
         align-items: center;
         justify-content: flex-end;
         column-gap: 6px;
@@ -204,6 +205,7 @@ a {
 @media screen and (min-width: 1024px) {
     .header {
         padding-bottom: 25px;
+        margin: 48px 96px 39px 96px;
     }
 
     .list__item_link {
