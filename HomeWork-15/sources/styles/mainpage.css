@@ -394,6 +394,7 @@
 /*******************************section-statistics*******************************/
 .section-statistics {
     position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -580,7 +581,7 @@
 .section-quality__toppart_icon-arrow-quality-tbl {
     display: none;
     position: absolute;
-    bottom: -25px;
+    bottom: 40px;
     left: 115px;
 }
 
@@ -1336,6 +1337,13 @@
     border-radius: 15px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 350px) {
+
+    /*******************************section-subscribe*******************************/
+    .form__email_input {
+        max-width: 120px;
+    }
+}
 
 /*******************************@media min-width: 750px*******************************/
 @media screen and (min-width: 750px) {
@@ -1409,6 +1417,95 @@
         left: 213px;
         width: 1px;
         height: 100%;
+    }
+
+    /*******************************section-quality*******************************/
+    .section-quality {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .section-quality__toppart {
+        order: 1;
+    }
+
+    .button-download {
+        align-self: flex-start;
+        background-color: #6C5FBC;
+    }
+
+    .section-quality__toppart_icon-arrow-quality {
+        display: none;
+    }
+
+    .section-quality__toppart_icon-arrow-quality-tbl {
+        display: flex;
+    }
+
+    .section-quality__lowerpart_wrapper {
+        width: 216px;
+    }
+
+    /*******************************section-restaurant*******************************/
+
+    .section-restaurant__title {
+        max-width: 340px;
+    }
+
+    .section-restaurant__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 50px;
+    }
+
+    /*******************************section-dishes*******************************/
+
+    .section-dishes__title {
+        max-width: 250px;
+    }
+
+    /*******************************section-purchases*******************************/
+
+    .section-purchases {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding-bottom: 0;
+    }
+
+    .section-purchases__toppart_icon-arrow {
+        display: none;
+    }
+
+    /*******************************section-customer*******************************/
+    .section-customer__title {
+        max-width: 240px;
+    }
+
+    /*******************************section-subscribe*******************************/
+    .section-subscribe {
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 100px;
+        padding: 26px 50px 43px 50px;
+    }
+
+    .section-subscribe__wrapper {
+        top: 45px;
+        right: 51px;
+    }
+
+    .section-subscribe__background-icons {
+        display: flex;
+        border-radius: 15px;
+    }
+
+    .section-subscribe__background-icons .social-icon {
+        width: 100%;
     }
 }
 
@@ -1629,15 +1726,14 @@
 
     /*******************************section-quality*******************************/
     .section-quality {
-        flex-direction: row;
-        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
         column-gap: 156px;
         padding: 0 57px 85px 148px;
     }
 
     .section-quality__toppart {
         padding: 0;
-        order: 1;
     }
 
     .section-quality__toppart_title {
@@ -1660,22 +1756,12 @@
     }
 
     .button-download {
-        align-self: flex-start;
         margin-bottom: 0;
         padding: 13px 19px;
-        background-color: #6C5FBC;
-    }
-
-    .section-quality__toppart_icon-arrow-quality {
-        display: none;
     }
 
     .section-quality__toppart_icon-arrow-quality-tbl {
-        display: flex;
-    }
-
-    .section-quality__lowerpart_wrapper {
-        width: 216px;
+        bottom: -25px;
     }
 
     .lowerpart__wrapper_icon-lines-quality {
@@ -1693,15 +1779,13 @@
     }
 
     .section-restaurant__title {
-        max-width: 340px;
         margin-bottom: 60px;
         font-size: 32px;
         line-height: 18px;
     }
 
     .section-restaurant__list {
-        display: flex;
-        flex-direction: row;
+        flex-wrap: nowrap;
         margin-bottom: 47px;
         column-gap: 22px;
     }
@@ -1764,7 +1848,6 @@
     }
 
     .section-dishes__title {
-        max-width: 250px;
         margin-bottom: 53px;
         font-size: 32px;
         line-height: 18px;
@@ -1824,9 +1907,6 @@
 
     /*******************************section-purchases*******************************/
     .section-purchases {
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
         padding: 71px 68px 90px 68px;
     }
 
@@ -1866,10 +1946,6 @@
 
     .card__time_text {
         font-size: 10px;
-    }
-
-    .section-purchases__toppart_icon-arrow {
-        display: none;
     }
 
     .section-purchases__lowerpart {
@@ -1930,7 +2006,6 @@
     }
 
     .section-customer__title {
-        max-width: 240px;
         margin-bottom: 56px;
         font-size: 32px;
     }
@@ -1978,10 +2053,7 @@
 
     /*******************************section-subscribe*******************************/
     .section-subscribe {
-        align-items: flex-start;
-        justify-content: center;
         margin: 0 68px 150px 68px;
-        padding: 26px 50px 43px 50px;
         border-radius: 21px;
     }
 
@@ -2007,22 +2079,12 @@
     }
 
     .section-subscribe__wrapper {
-        top: 45px;
-        right: 51px;
         width: 195px;
     }
 
-    .section-subscribe__background {
-        border-radius: 21px;
-    }
-
+    .section-subscribe__background,
     .section-subscribe__background-icons {
-        display: flex;
         border-radius: 21px;
-    }
-
-    .section-subscribe__background-icons .social-icon {
-        width: 100%;
     }
 }
 

@@ -383,6 +383,8 @@ a {
 }
 
 @media screen and (min-width: 1440px) {
+
+    /*******************************header*******************************/
     .header {
         padding-bottom: 25px;
         margin: 48px 96px 80px 96px;
