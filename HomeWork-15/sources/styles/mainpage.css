@@ -1065,6 +1065,10 @@
 }
 
 .lowerpart__head_sorting:hover {
+    border-radius: 0;
+}
+
+.lowerpart__head_sorting:hover {
     cursor: pointer;
 }
 
@@ -2022,10 +2026,6 @@ option {
     .lowerpart__head_sorting {
         padding: 9px 14px;
         border-radius: 9px;
-    }
-
-    .lowerpart__head_sorting:hover {
-        border-radius: 0;
     }
 
     select,
