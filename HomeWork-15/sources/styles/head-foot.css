@@ -30,7 +30,7 @@ a {
     margin: 33px 30px 57px 31px;
     padding-bottom: 30px;
     justify-content: space-between;
-    border-bottom: 0.5px solid #808080;
+    border-bottom: 1px solid #808080;
 }
 
 .header__wrapper-logo {
@@ -128,6 +128,11 @@ a {
 }
 
 /*******************************section-footer*******************************/
+.container-background-footer {
+    max-width: 100%;
+    background-color: #EFEFEF;
+}
+
 .section-footer {
     display: flex;
     flex-direction: column;
@@ -135,7 +140,6 @@ a {
     align-items: center;
     justify-content: center;
     padding: 55px 30px 36px 30px;
-    background-color: #EFEFEF;
 }
 
 .section-footer__wrapper {
@@ -220,6 +224,30 @@ a {
     content: var(--year);
 }
 
+@media screen and (min-width: 320px) and (max-width: 375px) {
+
+    /*******************************section-footer*******************************/
+    .section-footer__wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .section-footer__top-part {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-footer__top-part_wrapper {
+        margin-bottom: 30px;
+    }
+
+    .top-part__navigation_list {
+        align-items: center;
+    }
+}
+
 @media screen and (min-width: 750px) {
 
     /*******************************header*******************************/
@@ -296,35 +324,8 @@ a {
     .button-signup:hover {
         background-color: #524894;
     }
-}
-
-@media screen and (min-width: 1024px) {
-
-    /*******************************header*******************************/
-    .header {
-        padding-bottom: 18px;
-        margin: 34px 68px 57px 68px;
-    }
-
-    .wrapper-logo__link .social-icon {
-        width: 80px;
-        height: 31px;
-    }
-
-    .list__item_link {
-        font-size: var(--font-base-tbl);
-    }
-
-    .button-login,
-    .button-signup {
-        font-size: var(--font-base-tbl);
-    }
 
     /*******************************section-footer*******************************/
-    .section-footer {
-        padding: 68px 64px 57px 73px;
-    }
-
     .section-footer__wrapper {
         flex-direction: column;
         padding-bottom: 0;
@@ -382,12 +383,40 @@ a {
     }
 }
 
+@media screen and (min-width: 1024px) {
+
+    /*******************************header*******************************/
+    .header {
+        padding-bottom: 18px;
+        margin: 34px 68px 57px 68px;
+    }
+
+    .wrapper-logo__link .social-icon {
+        width: 80px;
+        height: 31px;
+    }
+
+    .list__item_link {
+        font-size: var(--font-base-tbl);
+    }
+
+    .button-login,
+    .button-signup {
+        font-size: var(--font-base-tbl);
+    }
+
+    /*******************************section-footer*******************************/
+    .section-footer {
+        padding: 68px 64px 57px 73px;
+    }
+}
+
 @media screen and (min-width: 1440px) {
 
     /*******************************header*******************************/
     .header {
         padding-bottom: 25px;
-        margin: 48px 96px 80px 96px;
+        margin: 48px 0 80px 0;
     }
 
     .wrapper-logo__link .social-icon {
@@ -395,12 +424,62 @@ a {
         height: 43px;
     }
 
-    .list__item_link {
-        font-size: var(--font-base-lpt);
-    }
-
+    .list__item_link,
     .button-login,
     .button-signup {
         font-size: var(--font-base-lpt);
+    }
+
+    /*******************************section-footer*******************************/
+    .section-footer {
+        padding: 96px 90px 81px 103px;
+    }
+
+    .section-footer__top-part {
+        margin-bottom: 57px;
+        padding-bottom: 29px;
+    }
+
+    .top-part__wrapper_logo .social-icon {
+        width: 151px;
+        height: 57px;
+    }
+
+    .top-part__navigation_list {
+        column-gap: 70px;
+    }
+
+    .list_itemfoot_link {
+        font-size: var(--font-base-lpt);
+        line-height: 27px;
+    }
+
+    .section-footer__lower-part_copyright {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .section-footer__lower-part_icons {
+        column-gap: 54px;
+    }
+
+    .social-icon-instagram {
+        width: 22px;
+        height: 22px;
+    }
+
+    .social-icon-linkedin {
+        width: 22px;
+        height: 21px;
+    }
+
+    .social-icon-facebook {
+        width: 10px;
+        height: 22px;
+    }
+
+    .social-icon-twitter {
+        width: 22px;
+        height: 18px;
     }
 }
