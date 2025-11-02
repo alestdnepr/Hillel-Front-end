@@ -1552,7 +1552,7 @@ option {
     .section-subscribe {
         align-items: flex-start;
         justify-content: center;
-        margin-bottom: 100px;
+        margin: 0 68px 100px 68px;
         padding: 26px 50px 43px 50px;
     }
 

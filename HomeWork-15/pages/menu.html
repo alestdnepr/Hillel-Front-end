@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sources/styles/reset.css">
+    <link rel="stylesheet" href="../sources/styles/head-foot.css">
+    <link rel="stylesheet" href="../sources/styles/mainpage.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../sources/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../sources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../sources/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../sources/favicon/site.webmanifest">
+    <title>Menu Eatly</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__wrapper-logo">
+                <a class="wrapper-logo__link" href="../index.html">
+                    <svg class="social-icon" viewBox="0 0 112 43" width="112" height="43">
+                        <use href="../sources/svg-sprite.svg#icon-logo-eatly" x="0" y="0"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__wrapper-burger">
+                <button class="header__wrapper-burger_button" type="button">
+                    <svg class="social-icon" viewBox="0 0 34 25" width="34" height="25">
+                        <use href="../sources/svg-sprite.svg#icon-burger" x="0" y="0"></use>
+                    </svg>
+                </button>
+                <div class="header__wrapper-burger_menu">
+                    <nav class="wrapper-burger_menu__navigation navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__list_item navigation__list_item-active">
+                                <a class="list__item_link" href="../pages/menu.html">Menu</a>
+                            </li>
+                            <li class="navigation__list_item">
+                                <a class="list__item_link" href="#">Blog</a>
+                            </li>
+                            <li class="navigation__list_item">
+                                <a class="list__item_link" href="#">Pricing</a>
+                            </li>
+                            <li class="navigation__list_item">
+                                <a class="list__item_link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="default-button button-login" type="button">Login</button>
+                    <button class="default-button button-signup" type="button">Sign up</button>
+                </div>
+            </div>
+            <nav class="header__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__list_item navigation__list_item-active">
+                        <a class="list__item_link" href="../pages/menu.html">Menu</a>
+                    </li>
+                    <li class="navigation__list_item">
+                        <a class="list__item_link" href="#">Blog</a>
+                    </li>
+                    <li class="navigation__list_item">
+                        <a class="list__item_link" href="#">Pricing</a>
+                    </li>
+                    <li class="navigation__list_item">
+                        <a class="list__item_link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <button class="default-button button-login" type="button">Login</button>
+                <button class="default-button button-signup" type="button">Sign up</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-restaurant">
+            <h2 class="section-restaurant__title">Our Top <span
+                    class="section-restaurant__title_mainword">Restaurants</span></h2>
+            <ul class="section-restaurant__list">
+                <li class="section-restaurant__list_item">
+                    <a class="list__item_rest-link" href="#">
+                        <div class="item__rest-link_wrapper">
+                            <img class="rest-link__wrapper_image"
+                                src="../sources/images/main-page/03-restaurant/chicken-king.png"
+                                alt="image-chicken-king">
+                        </div>
+                        <div class="item__rest-link_info">
+                            <div class="rest-link__info_leftpart">
+                                <span class="info__leftpart_label">Healthy</span>
+                                <span class="info__leftpart_title">The Chicken King</span>
+                                <div class="info__leftpart_rating">
+                                    <span class="leftpart__rating_time">24min •</span>
+                                    <div class="leftpart__rating_wrapper">
+                                        <svg class="social-icon" viewBox="0 0 21 21" width="21" height="21">
+                                            <use href="../sources/svg-sprite.svg#icon-blue-star" x="0" y="0"></use>
+                                        </svg>
+                                    </div>
+                                    <span class="leftpart__rating_mark">4.8</span>
+                                </div>
+                            </div>
+                            <div class="rest-link__info_rightpart">
+                                <div class="info__rightpart_wrapper">
+                                    <svg class="social-icon" viewBox="0 0 32 32" width="32" height="32">
+                                        <use href="../sources/svg-sprite.svg#icon-bookmark" x="0" y="0"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="section-restaurant__list_item">
+                    <a class="list__item_rest-link" href="#">
+                        <div class="item__rest-link_wrapper">
+                            <img class="rest-link__wrapper_image"
+                                src="../sources/images/main-page/03-restaurant/burger-king.png"
+                                alt="image-chicken-king">
+                        </div>
+                        <div class="item__rest-link_info">
+                            <div class="rest-link__info_leftpart">
+                                <span class="info__leftpart_label info__leftpart_label-trending">Trending</span>
+                                <span class="info__leftpart_title">The Burger King</span>
+                                <div class="info__leftpart_rating">
+                                    <span class="leftpart__rating_time">24min •</span>
+                                    <div class="leftpart__rating_wrapper">
+                                        <svg class="social-icon" viewBox="0 0 21 21" width="21" height="21">
+                                            <use href="../sources/svg-sprite.svg#icon-blue-star" x="0" y="0"></use>
+                                        </svg>
+                                    </div>
+                                    <span class="leftpart__rating_mark">4.9</span>
+                                </div>
+                            </div>
+                            <div class="rest-link__info_rightpart">
+                                <div class="info__rightpart_wrapper">
+                                    <svg class="social-icon" viewBox="0 0 32 32" width="32" height="32">
+                                        <use href="../sources/svg-sprite.svg#icon-bookmark" x="0" y="0"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="section-restaurant__list_item">
+                    <a class="list__item_rest-link" href="#">
+                        <div class="item__rest-link_wrapper">
+                            <img class="rest-link__wrapper_image"
+                                src="../sources/images/main-page/03-restaurant/burger-king.png"
+                                alt="image-chicken-king">
+                        </div>
+                        <div class="item__rest-link_info">
+                            <div class="rest-link__info_leftpart">
+                                <span class="info__leftpart_label info__leftpart_label-trending">Trending</span>
+                                <span class="info__leftpart_title">The Burger King</span>
+                                <div class="info__leftpart_rating">
+                                    <span class="leftpart__rating_time">24min •</span>
+                                    <div class="leftpart__rating_wrapper">
+                                        <svg class="social-icon" viewBox="0 0 21 21" width="21" height="21">
+                                            <use href="../sources/svg-sprite.svg#icon-blue-star" x="0" y="0"></use>
+                                        </svg>
+                                    </div>
+                                    <span class="leftpart__rating_mark">4.9</span>
+                                </div>
+                            </div>
+                            <div class="rest-link__info_rightpart">
+                                <div class="info__rightpart_wrapper">
+                                    <svg class="social-icon" viewBox="0 0 32 32" width="32" height="32">
+                                        <use href="../sources/svg-sprite.svg#icon-bookmark" x="0" y="0"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="viewall section-restaurant__viewall">
+                <a href="section-restaurant__viewall_link">
+                    <svg class="social-icon" viewBox="0 0 114 46" width="114" height="46">
+                        <use href="../sources/svg-sprite.svg#icon-viewall" x="0" y="0"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-dishes">
+            <h2 class="section-dishes__title">Our Top <span class="section-dishes__title_mainword">Dishes</span>
+            </h2>
+            <ul class="section-dishes__list">
+                <li class="section-dishes__list_item">
+                    <a class="list__item_dish-link" href="#">
+                        <button class="item__dish-link_button-heart">
+                            <svg class="social-icon social-icon__icon-heart" viewBox="0 0 15 12" width="15" height="12">
+                                <use href="../sources/svg-sprite.svg#icon-heart" x="0" y="0"></use>
+                            </svg>
+                        </button>
+                        <div class="item__dish-link_wrapper">
+                            <img class="dish-link__wrapper_image"
+                                src="../sources/images/main-page/04-dishes/chiken-hell.png" alt="image-chiken-hell">
+                        </div>
+                        <div class="item__dish-link_info">
+                            <span class="dish-link__info_label">Healthy</span>
+                            <span class="dish-link__info_title">Chicken Hell</span>
+                            <div class="dish-link__info_rating">
+                                <span class="info__rating_time">24min •</span>
+                                <div class="info__rating_wrapper">
+                                    <svg class="social-icon" viewBox="0 0 21 21" width="16" height="16">
+                                        <use href="../sources/svg-sprite.svg#icon-blue-star" x="0" y="0"></use>
+                                    </svg>
+                                </div>
+                                <span class="leftpart__rating_mark">4.8</span>
+                            </div>
+                            <div class="dish-link__info_price">
+                                <div class="info__price_usd">
+                                    <span>$12</span>
+                                    <span class="price__usd_cents">.99</span>
+                                </div>
+                                <button class="info__price_button-icon-plus">
+                                    <svg class="social-icon social-icon__icon-plus" viewBox="0 0 29 26" width="29"
+                                        height="26">
+                                        <use href="../sources/svg-sprite.svg#icon-plus" x="0" y="0"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="section-dishes__list_item">
+                    <a class="list__item_dish-link" href="#">
+                        <button class="item__dish-link_button-heart">
+                            <svg class="social-icon social-icon__icon-heart" viewBox="0 0 15 12" width="15" height="12">
+                                <use href="../sources/svg-sprite.svg#icon-heart" x="0" y="0"></use>
+                            </svg>
+                        </button>
+                        <div class="item__dish-link_wrapper">
+                            <img class="dish-link__wrapper_image"
+                                src="../sources/images/main-page/04-dishes/swe-dish-t.png" alt="image-swe-dish-t">
+                        </div>
+                        <div class="item__dish-link_info">
+                            <span class="dish-link__info_label info__label_trend">Trending</span>
+                            <span class="dish-link__info_title">Swe Dish</span>
+                            <div class="dish-link__info_rating">
+                                <span class="info__rating_time">34min •</span>
+                                <div class="info__rating_wrapper">
+                                    <svg class="social-icon" viewBox="0 0 21 21" width="16" height="16">
+                                        <use href="../sources/svg-sprite.svg#icon-blue-star" x="0" y="0"></use>
+                                    </svg>
+                                </div>
+                                <span class="leftpart__rating_mark">4.9</span>
+                            </div>
+                            <div class="dish-link__info_price">
+                                <div class="info__price_usd">
+                                    <span>$19</span>
+                                    <span class="price__usd_cents">.99</span>
+                                </div>
+                                <button class="info__price_button-icon-plus">
+                                    <svg class="social-icon social-icon__icon-plus" viewBox="0 0 29 26" width="29"
+                                        height="26">
+                                        <use href="../sources/svg-sprite.svg#icon-plus" x="0" y="0"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="section-dishes__list_item">
+                    <a class="list__item_dish-link" href="#">
+                        <button class="item__dish-link_button-heart">
+                            <svg class="social-icon social-icon__icon-heart" viewBox="0 0 15 12" width="15" height="12">
+                                <use href="../sources/svg-sprite.svg#icon-heart" x="0" y="0"></use>
+                            </svg>
+                        </button>
+                        <div class="item__dish-link_wrapper">
+                            <img class="dish-link__wrapper_image"
+                                src="../sources/images/main-page/04-dishes/swe-dish-s.png" alt="image-swe-dish-s">
+                        </div>
+                        <div class="item__dish-link_info">
+                            <span class="dish-link__info_label info__label_supreme">Supreme</span>
+                            <span class="dish-link__info_title">Swe Dish</span>
+                            <div class="dish-link__info_rating">
+                                <span class="info__rating_time">34min •</span>
+                                <div class="info__rating_wrapper">
+                                    <svg class="social-icon" viewBox="0 0 21 21" width="16" height="16">
+                                        <use href="../sources/svg-sprite.svg#icon-blue-star" x="0" y="0"></use>
+                                    </svg>
+                                </div>
+                                <span class="leftpart__rating_mark">4.9</span>
+                            </div>
+                            <div class="dish-link__info_price">
+                                <div class="info__price_usd">
+                                    <span>$19</span>
+                                    <span class="price__usd_cents">.99</span>
+                                </div>
+                                <button class="info__price_button-icon-plus">
+                                    <svg class="social-icon social-icon__icon-plus" viewBox="0 0 29 26" width="29"
+                                        height="26">
+                                        <use href="../sources/svg-sprite.svg#icon-plus" x="0" y="0"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="section-dishes__list_item">
+                    <a class="list__item_dish-link" href="#">
+                        <button class="item__dish-link_button-heart">
+                            <svg class="social-icon social-icon__icon-heart" viewBox="0 0 15 12" width="15" height="12">
+                                <use href="../sources/svg-sprite.svg#icon-heart" x="0" y="0"></use>
+                            </svg>
+                        </button>
+                        <div class="item__dish-link_wrapper">
+                            <img class="dish-link__wrapper_image"
+                                src="../sources/images/main-page/04-dishes/chiken-hell.png" alt="image-chiken-hell">
+                        </div>
+                        <div class="item__dish-link_info">
+                            <span class="dish-link__info_label">Healthy</span>
+                            <span class="dish-link__info_title">Chicken Hell</span>
+                            <div class="dish-link__info_rating">
+                                <span class="info__rating_time">24min •</span>
+                                <div class="info__rating_wrapper">
+                                    <svg class="social-icon" viewBox="0 0 21 21" width="16" height="16">
+                                        <use href="../sources/svg-sprite.svg#icon-blue-star" x="0" y="0"></use>
+                                    </svg>
+                                </div>
+                                <span class="leftpart__rating_mark">4.8</span>
+                            </div>
+                            <div class="dish-link__info_price">
+                                <div class="info__price_usd">
+                                    <span>$12</span>
+                                    <span class="price__usd_cents">.99</span>
+                                </div>
+                                <button class="info__price_button-icon-plus">
+                                    <svg class="social-icon social-icon__icon-plus" viewBox="0 0 29 26" width="29"
+                                        height="26">
+                                        <use href="../sources/svg-sprite.svg#icon-plus" x="0" y="0"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="section-dishes__list_item">
+                    <a class="list__item_dish-link" href="#">
+                        <button class="item__dish-link_button-heart">
+                            <svg class="social-icon social-icon__icon-heart" viewBox="0 0 15 12" width="15" height="12">
+                                <use href="../sources/svg-sprite.svg#icon-heart" x="0" y="0"></use>
+                            </svg>
+                        </button>
+                        <div class="item__dish-link_wrapper">
+                            <img class="dish-link__wrapper_image"
+                                src="../sources/images/main-page/04-dishes/swe-dish-t.png" alt="image-swe-dish-t">
+                        </div>
+                        <div class="item__dish-link_info">
+                            <span class="dish-link__info_label info__label_trend">Trending</span>
+                            <span class="dish-link__info_title">Swe Dish</span>
+                            <div class="dish-link__info_rating">
+                                <span class="info__rating_time">34min •</span>
+                                <div class="info__rating_wrapper">
+                                    <svg class="social-icon" viewBox="0 0 21 21" width="16" height="16">
+                                        <use href="../sources/svg-sprite.svg#icon-blue-star" x="0" y="0"></use>
+                                    </svg>
+                                </div>
+                                <span class="leftpart__rating_mark">4.9</span>
+                            </div>
+                            <div class="dish-link__info_price">
+                                <div class="info__price_usd">
+                                    <span>$19</span>
+                                    <span class="price__usd_cents">.99</span>
+                                </div>
+                                <button class="info__price_button-icon-plus">
+                                    <svg class="social-icon social-icon__icon-plus" viewBox="0 0 29 26" width="29"
+                                        height="26">
+                                        <use href="../sources/svg-sprite.svg#icon-plus" x="0" y="0"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="viewall">
+                <a href="viewall_link">
+                    <svg class="social-icon" viewBox="0 0 114 46" width="114" height="46">
+                        <use href="../sources/svg-sprite.svg#icon-viewall" x="0" y="0"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-background-footer">
+        <div class="container">
+            <div class="section-footer">
+                <div class="section-footer__wrapper">
+                    <div class="section-footer__top-part">
+                        <div class="section-footer__top-part_wrapper">
+                            <a class="top-part__wrapper_logo" href="../index.html">
+                                <svg class="social-icon" viewBox="0 0 100 38" width="100" height="38">
+                                    <use href="../sources/svg-sprite.svg#icon-logo-foot" x="0" y="0"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <nav class="section-footer__top-part_navigation navigation">
+                            <ul class="top-part__navigation_list">
+                                <li class="navigation__list_itemfoot">
+                                    <a class="list_itemfoot_link" href="#">Blog</a>
+                                </li>
+                                <li class="navigation__list_itemfoot">
+                                    <a class="list_itemfoot_link" href="#">Pricing</a>
+                                </li>
+                                <li class="navigation__list_itemfoot">
+                                    <a class="list_itemfoot_link" href="../index.html">About Us</a>
+                                </li>
+                                <li class="navigation__list_itemfoot">
+                                    <a class="list_itemfoot_link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="section-footer__lower-part">
+                        <div class="section-footer__lower-part_copyright">© <span class="date-year"></span> EATLY All
+                            Rights
+                            Reserved.</div>
+                        <div class="section-footer__lower-part_icons">
+                            <button class="button__lower-part_icons">
+                                <svg class="social-icon social-icon-instagram" viewBox="0 0 16 16" width="16"
+                                    height="16">
+                                    <use href="../sources/svg-sprite.svg#icon-instagram" x="0" y="0"></use>
+                                </svg>
+                            </button>
+                            <button class="button__lower-part_icons">
+                                <svg class="social-icon social-icon-linkedin" viewBox="0 0 16 16" width="16"
+                                    height="16">
+                                    <use href="../sources/svg-sprite.svg#icon-linkedin" x="0" y="0"></use>
+                                </svg>
+                            </button>
+                            <button class="button__lower-part_icons">
+                                <svg class="social-icon social-icon-facebook" viewBox="0 0 8 16" width="8" height="16">
+                                    <use href="../sources/svg-sprite.svg#icon-facebook" x="0" y="0"></use>
+                                </svg>
+                            </button>
+                            <button class="button__lower-part_icons">
+                                <svg class="social-icon social-icon-twitter" viewBox="0 0 16 13" width="16" height="13">
+                                    <use href="../sources/svg-sprite.svg#icon-twitter" x="0" y="0"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-footer__copyright-mob">© <span class="date-year"></span> EATLY All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
