@@ -560,80 +560,77 @@
             </h2>
             <div class="section-faq__list-faq">
                 <div class="section-faq__list-faq_item">
-                    <div class="list-faq__item_head" id="faq1">
+                    <button class="accordion">
                         <div class="item__head_title">How long does delivery take?</div>
-                        <button class="item__head_wrapper-button-open" type="button">
+                        <div class="item__head_wrapper">
                             <svg class="social-icon" viewBox="0 0 16 16" width="16" height="16">
                                 <use href="../sources/svg-sprite.svg#icon-button-plus" x="0" y="0"></use>
                             </svg>
-                            <svg class="social-icon social-icon-hidden" viewBox="0 0 16 16" width="16" height="16">
-                                <use href="../sources/svg-sprite.svg#icon-button-minus" x="0" y="0"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="list-faq__item_text" id="reply1">You Can Get Information By Contacting Our Support
-                        Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan?
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p class="list-faq__item_text">You Can Get Information By Contacting Our Support
+                            Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan?</p>
                     </div>
                 </div>
-
                 <div class="section-faq__list-faq_item">
-                    <div class="list-faq__item_head" id="faq2">
+                    <button class="accordion">
                         <div class="item__head_title">How Does It Work?</div>
-                        <button class="item__head_wrapper-button-open" type="button">
+                        <div class="item__head_wrapper">
                             <svg class="social-icon" viewBox="0 0 16 16" width="16" height="16">
                                 <use href="../sources/svg-sprite.svg#icon-button-plus" x="0" y="0"></use>
                             </svg>
-                        </button>
-                    </div>
-                    <div class="list-faq__item_text" id="reply2">You Can Get Information By Contacting Our Support
-                        Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan?
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p class="list-faq__item_text">You Can Get Information By Contacting Our Support
+                            Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan?</p>
                     </div>
                 </div>
-
                 <div class="section-faq__list-faq_item">
-                    <div class="list-faq__item_head" id="faq3">
+                    <button class="accordion">
                         <div class="item__head_title">How does your food delivery service work?</div>
-                        <button class="item__head_wrapper-button-open" type="button">
+                        <div class="item__head_wrapper">
                             <svg class="social-icon" viewBox="0 0 16 16" width="16" height="16">
                                 <use href="../sources/svg-sprite.svg#icon-button-plus" x="0" y="0"></use>
                             </svg>
-                        </button>
-                    </div>
-                    <div class="list-faq__item_text" id="reply3">You Can Get Information By Contacting Our Support
-                        Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan?
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p class="list-faq__item_text">You Can Get Information By Contacting Our Support
+                            Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan?</p>
                     </div>
                 </div>
-
                 <div class="section-faq__list-faq_item">
-                    <div class="list-faq__item_head" id="faq4">
+                    <button class="accordion">
                         <div class="item__head_title">What payment options do you accept?</div>
-                        <button class="item__head_wrapper-button-open" type="button">
+                        <div class="item__head_wrapper">
                             <svg class="social-icon" viewBox="0 0 16 16" width="16" height="16">
                                 <use href="../sources/svg-sprite.svg#icon-button-plus" x="0" y="0"></use>
                             </svg>
-                        </button>
-                    </div>
-                    <div class="list-faq__item_text" id="reply4">You Can Get Information By Contacting Our Support
-                        Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan?
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p class="list-faq__item_text">You Can Get Information By Contacting Our Support
+                            Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan?</p>
                     </div>
                 </div>
-
                 <div class="section-faq__list-faq_item">
-                    <div class="list-faq__item_head" id="faq5">
+                    <button class="accordion">
                         <div class="item__head_title">Do you offer discounts or promotions?</div>
-                        <button class="item__head_wrapper-button-open" type="button">
+                        <div class="item__head_wrapper">
                             <svg class="social-icon" viewBox="0 0 16 16" width="16" height="16">
                                 <use href="../sources/svg-sprite.svg#icon-button-plus" x="0" y="0"></use>
                             </svg>
-                        </button>
-                    </div>
-                    <div class="list-faq__item_text" id="reply5">You Can Get Information By Contacting Our Support
-                        Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan?
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p class="list-faq__item_text">You Can Get Information By Contacting Our Support
+                            Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan?</p>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="container-background-footer">
@@ -703,55 +700,24 @@
 
 
     <script>
-        const faq1 = document.getElementById('faq1');
-        const reply1 = document.getElementById('reply1');
-        faq1.addEventListener('click', function () {
-            if (reply1.style.display === 'flex') {
-                reply1.style.display = 'none';
-            } else {
-                reply1.style.display = 'flex';
-            }
-        });
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-        const faq2 = document.getElementById('faq2');
-        const reply2 = document.getElementById('reply2');
-        faq2.addEventListener('click', function () {
-            if (reply2.style.display === 'flex') {
-                reply2.style.display = 'none';
-            } else {
-                reply2.style.display = 'flex';
-            }
-        });
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
 
-        const faq3 = document.getElementById('faq3');
-        const reply3 = document.getElementById('reply3');
-        faq3.addEventListener('click', function () {
-            if (reply3.style.display === 'flex') {
-                reply3.style.display = 'none';
-            } else {
-                reply3.style.display = 'flex';
-            }
-        });
-
-        const faq4 = document.getElementById('faq4');
-        const reply4 = document.getElementById('reply4');
-        faq4.addEventListener('click', function () {
-            if (reply4.style.display === 'flex') {
-                reply4.style.display = 'none';
-            } else {
-                reply4.style.display = 'flex';
-            }
-        });
-
-        const faq5 = document.getElementById('faq5');
-        const reply5 = document.getElementById('reply5');
-        faq5.addEventListener('click', function () {
-            if (reply5.style.display === 'flex') {
-                reply5.style.display = 'none';
-            } else {
-                reply5.style.display = 'flex';
-            }
-        });
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
     </script>
 
 </body>
