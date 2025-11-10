@@ -1,4 +1,3 @@
-
 const myButton = document.getElementById('myButton');
 const myContainer = document.getElementById('myContainer');
 

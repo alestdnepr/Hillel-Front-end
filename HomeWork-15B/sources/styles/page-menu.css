@@ -393,10 +393,23 @@
     cursor: pointer;
 }
 
-.item__head_wrapper {
+.item__head_wrapper,
+.item__head_wrapper-hidden {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.item__head_wrapper-hidden {
+    display: none;
+}
+
+.item__head_title:checked .item__head_wrapper {
+    display: none;
+}
+
+.main-checkbox:checked .item__head_wrapper-hidden {
+    display: flex;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -410,7 +423,7 @@
     max-width: 250px;
     display: none;
     overflow: hidden;
-    padding: 0 5px 31px 5px;
+    padding: 10px 5px 31px 5px;
     font-size: 11px;
     font-weight: 400;
     line-height: 160%;
@@ -425,6 +438,15 @@
         display: flex;
         flex-wrap: wrap;
         row-gap: 11px;
+    }
+}
+
+/*******************************@media min-width: 400px*******************************/
+@media screen and (min-width: 400px) {
+
+    /*******************************section-faq*******************************/
+    .panel {
+        max-width: 800px;
     }
 }
 
@@ -684,6 +706,46 @@
     .version-no-display {
         display: none;
     }
+
+    /*******************************section-faq*******************************/
+    .section-faq {
+        padding: 100px 103px 120px 103px;
+    }
+
+    .section-faq__title {
+        max-width: 300px;
+        margin-bottom: 65px;
+        font-size: 32px;
+    }
+
+    .section-faq__title_icon-lines-faq {
+        top: -35px;
+        right: -30px;
+    }
+
+    .section-faq__title_icon-lines-faq .social-icon {
+        width: 33px;
+        height: 31px;
+    }
+
+    .section-faq__list-faq {
+        row-gap: 21px;
+    }
+
+    .accordion {
+        font-size: 17px;
+        line-height: 42px;
+    }
+
+    .item__head_wrapper .social-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .panel {
+        font-size: 14px;
+        color: #686868;
+    }
 }
 
 /*******************************@media min-width: 1440px*******************************/
@@ -870,6 +932,48 @@
     .button-food,
     .button-restaurant {
         padding: 21px 0;
+        font-size: 20px;
+    }
+
+    /*******************************section-faq*******************************/
+    .section-faq {
+        padding: 140px 144px 170px 144px;
+    }
+
+    .section-faq__title {
+        max-width: 420px;
+        margin-bottom: 90px;
+        font-size: 45px;
+    }
+
+    .section-faq__title_icon-lines-faq {
+        top: -45px;
+        right: -45px;
+    }
+
+    .section-faq__title_icon-lines-faq .social-icon {
+        width: 46px;
+        height: 44px;
+    }
+
+    .section-faq__list-faq {
+        row-gap: 29px;
+    }
+
+    .accordion {
+        padding: 10px 20px 14px 20px;
+        font-size: 24px;
+        line-height: 60px;
+    }
+
+    .item__head_wrapper .social-icon {
+        width: 31px;
+        height: 31px;
+    }
+
+    .panel {
+        max-width: 100%;
+        padding: 10px 20px 31px 20px;
         font-size: 20px;
     }
 }
