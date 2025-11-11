@@ -404,11 +404,11 @@
     display: none;
 }
 
-.item__head_title:checked .item__head_wrapper {
+.accordion.active .wrapper-plus {
     display: none;
 }
 
-.main-checkbox:checked .item__head_wrapper-hidden {
+.accordion.active .wrapper-minus {
     display: flex;
 }
 
@@ -737,7 +737,8 @@
         line-height: 42px;
     }
 
-    .item__head_wrapper .social-icon {
+    .item__head_wrapper .social-icon,
+    .item__head_wrapper-hidden .social-icon {
         width: 22px;
         height: 22px;
     }
@@ -966,7 +967,8 @@
         line-height: 60px;
     }
 
-    .item__head_wrapper .social-icon {
+    .item__head_wrapper .social-icon,
+    .item__head_wrapper-hidden .social-icon {
         width: 31px;
         height: 31px;
     }
