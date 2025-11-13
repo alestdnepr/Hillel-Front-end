@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../sources/styles/head-foot.css">
     <link rel="stylesheet" href="../sources/styles/mainpage.css">
     <link rel="stylesheet" href="../sources/styles/page-menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="../sources/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../sources/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../sources/favicon/favicon-16x16.png">
@@ -636,6 +637,47 @@
 
     </div>
 
+    <!--
+    <div class="container">
+        <div class="section-slides">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../sources/images/main-page/04-dishes/chiken-hell.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../sources/images/main-page/04-dishes/swe-dish-s.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../sources/images/main-page/04-dishes/swe-dish-t.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../sources/images/main-page/04-dishes/chiken-hell.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../sources/images/main-page/04-dishes/swe-dish-s.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../sources/images/main-page/04-dishes/swe-dish-t.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../sources/images/main-page/04-dishes/chiken-hell.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../sources/images/main-page/04-dishes/swe-dish-s.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../sources/images/main-page/04-dishes/swe-dish-t.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+-->
+
     <div class="container-background-footer">
         <div class="container">
             <div class="section-footer">
@@ -701,7 +743,6 @@
         </div>
     </div>
 
-
     <script>
         const faq1 = document.getElementById('faq1');
         const reply1 = document.getElementById('reply1');
@@ -753,7 +794,25 @@
             }
         });
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>
